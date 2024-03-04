@@ -1,0 +1,570 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Add this at the beginning of your CSS file */
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Add this to the elements where you want a fun cursor, like links or clickable elements */
+  a, .toggle-hidden-content {
+    cursor: pointer; /* or any other cursor type like 'grab', 'zoom-in', etc. */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .navbar a:hover {
+    color: lightgray;
+  }
+  
+  .logo {
+    font-size: 20px;
+    margin: 4;
+    font-family: 'Courier New', Courier, monospace;
+    color: #800080;
+    margin-right: 20px;
+  }
+  
+  /* Styles for section titles */
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #800080;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .section {
+    padding: 50px 0;
+    margin: 0;
+  }
+  
+  /* Styles for the home section */
+  #home {
+    height: 100vh;
+    background-image: url('images/backgroun-home.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Profile picture styles */
+  .profile-picture-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .profile-picture:hover {
+    filter: brightness(80%);
+  }
+  
+  /* Personal information styles */
+  .personal-info {
+    max-width: 500px;
+  }
+  
+  .name {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Social links styles */
+  .social-links {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #800080;
+  }
+  
+  /* Bubble-style links */
+  .bubble-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .purple-link {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-
+  }
+  /* styles.css */
+  
+  /* Bubble-style links (continued) */
+  .purple-link:hover {
+    background-color: #5a005a;
+  }
+  
+  /* New styles for the additional sections */
+  #expertise,
+  #work,
+  #projects,
+  #contact {
+    background-color: #f9f9f9;
+    margin-top: 0px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-family: 'Arial', sans-serif; /* Use a consistent font */
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Expertise section */
+  #expertise {
+    background-image: url('images/Background-one.png');
+    background-size: cover;
+  }
+  
+  .expertise-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .expertise-box {
+    max-width: 400px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .expertise-box:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .decorated-title {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .decorated-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #D21404;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .code-decorated {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .before {
+    content: '';
+    position: absolute;
+    font-size: 20px;
+    color: #3498db;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  
+  /* Work experience section */
+  #work {
+    background-image: url('images/background-2.png');
+    background-size: cover;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    background-color: #800080;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .timeline-item:hover {
+    background-color: #5a005a;
+  }
+  
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-content h3,
+  .timeline-content p,
+  .timeline-content .dropdown-symbol {
+    color: white;
+    margin: 0;
+  }
+  
+  .timeline-date {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  .details-container {
+    display: none;
+    padding: 10px;
+    border: 1px solid #D21404;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .resume-and-timeline-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+  }
+  
+  /* Resume container styles with animation (
+  /* Resume container styles with animation (continued) */
+  .resume-container {
+    max-width: 400px; /* Adjust the width as needed */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .resume-image {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resume-container:hover .resume-image {
+    transform: scale(1.1);
+  }
+  
+  .resume-title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .resume-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800080;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .download-link:hover {
+    background-color: #5a005a;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-picture-container {
+      margin-right: 0;
+    }
+  
+    .timeline,
+    .details-container,
+    .resume-container {
+      width: 100%;
+    }
+  
+    .project-container {
+      width: 100%;
+    }
+  
+    .decor-image-container {
+      width: 100%;
+    }
+  
+    .project {
+      width: 100%;
+    }
+  
+    .hidden-content {
+      max-height: 1000px; /* Adjust the max-height as needed */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .timeline,
+    .details-container,
+    .resume-container {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .timeline,
+    .details-container,
+    .resume-container {
+      width: 60%;
+    }
+  }
+  
+  /* Projects section */
+  /* Project section */
+  #projects {
+    background-color: #f9f9f9;
+    background-image: url('images/background-4.png');
+    padding: 50px 0;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Container for project cards and decor image */
+  .decor-and-projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-right: 20px;
+  }
+  
+  /* Container for project cards (without image) */
+  .project-container {
+    width: 100%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* No styles needed for decor image since it's removed */
+  
+  /* Styles for individual project cards */
+  .project {
+    width: calc(50% - 20px); /* Adapt width based on number of projects */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Add a subtle hover effect */
+    color: #3498db;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Add styles for the links within the project cards */
+  .project-link {
+    display: block;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .project-link:hover {
+    color: #800080;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .project {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Add this to your existing CSS file */
+  
+  /* Contact section styles */
+  .contact {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    color: #800080;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Add animation styles */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .contact-title,
+  .contact-info {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* End of your existing CSS file */
+  
+  
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative; /* Move footer to the bottom */
+    bottom: 0;
+    width: 100%; /* Make footer span the entire width */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media-icon {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-media-icon:hover {
+    color: #800080;
+  }
+  
+  .submit-button.submitted {
+    background-color: green; /* Change the background color to green when submitted */
+    color: white; /* Change the text color to white */
+    cursor: not-allowed; /* Optionally, change cursor to not-allowed to indicate it's not clickable anymore */
+  }
+  
+  /* End of styles.css */
+  

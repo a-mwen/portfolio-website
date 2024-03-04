@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRrKuxGrs0HGiPpOaV9dWrxI4RNc2RSQF5qY1xX2" crossorigin="anonymous">
+  <title>Asha Mweene Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h2 class="logo">AshaMweene._</h2>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div id="home" class="section">
+    <div class="home-content">
+      <!-- Profile picture with hover effect -->
+      <div class="profile-picture-container">
+        <img src="images/professional pic.jpg" alt="Your Profile Picture" class="profile-picture">
+      </div>
+
+      <!-- Name, description, and links -->
+      <div class="personal-info">
+        <h2 class="name">Asha Mweene</h2>
+        <p class="description">
+          I am a computer science student aspiring to be a software engineer. I have a passion for coding and developing software that can make a difference in people's lives. Being a student, I have had the opportunity to work on various projects that have helped me gain experience in different areas of software development. I am excited to continue growing and learning in the field of computer science.
+        </p>
+
+        <!-- Social links with font awesome icons -->
+        <div class="social-links">
+          <a href="https://github.com/a-mwen" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github social-icon"></i>
+          </a>
+          <a href="https://linkedin.com/in/ashamweene" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin social-icon"></i>
+          </a>
+        </div>
+
+        <!-- Bubble-style links -->
+        <div class="bubble-links">
+          <a href="https://github.com/a-mwen" class="purple-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/ashamweene" class="purple-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expertise Section -->
+
+  <div id="expertise" class="section expertise">
+    <h2 class="section-title">Expertise</h2>
+    <div class="expertise-content">
+      <div class="expertise-box">
+        <h3 class="decorated-title">Programming Languages</h3>
+        <p class="code-decorated">Proficient in utilizing a range of programming languages including JavaScript, Python, and SQL (PostgreSQL, MySQL). Well-versed in implementing code in both functional and object-oriented paradigms.</p>
+      </div>
+
+      <div class="expertise-box">
+        <h3 class="decorated-title">Web Development</h3>
+        <p class="code-decorated">Experienced in full-stack web development using HTML, CSS, and JavaScript. Particularly skilled in building dynamic and responsive user interfaces. Familiar with popular frameworks like Node.js and ReactJS.</p>
+      </div>
+
+      <div class="expertise-box">
+        <h3 class="decorated-title">Database Management</h3>
+        <p class="code-decorated">Proficient in database management using PgAdmin and SQL databases, including PostgreSQL and MySQL. Skilled in designing and optimizing database schemas to ensure efficient data storage and retrieval.</p>
+      </div>
+
+      <div class="expertise-box">
+        <h3 class="decorated-title">Tools and Technologies</h3>
+        <p class="code-decorated">Well-versed in utilizing Git for version control and collaboration. Experienced in API testing using tools such as Postman. Active on GitHub for code collaboration and project management.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work Experience Section -->
+  <div id="work" class="section">
+    <h2 class="section-title">Work Experience</h2>
+
+    <!-- Container for resume and work experience -->
+    <div class="resume-and-timeline-container">
+      <!-- Resume document on the left -->
+      <div class="resume-container">
+        <h3 class="resume-title">Resume</h3>
+        <div class="resume-display">
+          <img src="images/resume-img.png" alt="Your Resume" class="resume-image">
+        </div>
+        <p class="resume-description">Download my resume to learn more about my professional background and skills.</p>
+        <a href="file:///C:/Users/asham/OneDrive/Resume/Asha%20Mweene%20Resume-Current.pdf" download="Asha_Mweene_Resume.pdf" class="download-link">Download Resume</a>
+      </div>
+
+      <!-- Work experience timeline with dropdowns on the right -->
+      <div class="timeline">
+        <!-- Work experience item 1 -->
+        <div class="timeline-item" onclick="toggleDetails('work-details-1')">
+          <div class="timeline-content">
+            <h3>Computer Science Tutor</h3>
+            <p class="timeline-date">October 2023 - Current</p>
+          </div>
+        </div>
+
+        <!-- Work details dropdown 1 -->
+        <div id="work-details-1" class="details-container">
+          <p>
+            Company Name: Point Park University (Center for Student Success)<br>
+            Location: Pittsburgh, PA<br>
+            Responsibilities: <br>
+            • Instruct and guide students in understanding fundamental concepts of computer science, including programming languages, data structures, and algorithms.<br>
+            • Offer constructive feedback on assignments and projects, fostering continuous improvement in coding and problem-solving abilities. <br>
+            • Facilitate grade enhancement and boost confidence in computer science through personalized support and mentoring
+          </p>
+        </div>
+
+        <!-- Work experience item 2 -->
+        <div class="timeline-item" onclick="toggleDetails('work-details-2')">
+          <div class="timeline-content">
+            <h3>Library Associate</h3>
+            <p class="timeline-date">September 2021 - Current</p>
+          </div>
+        </div>
+
+        <!-- Work details dropdown 2 -->
+        <div id="work-details-2" class="details-container">
+          <p>
+            Company Name: Point Park University, Library Department<br>
+            Location: Pittsburgh, PA<br>
+            Responsibilities: <br> • Assist students and faculty in the proper use of the library and library resources, including the library's online 
+            catalog, computer-based applications, and specialized databases. <br>
+            • Answer reference phones and conduct research for patrons utilizing print and online resources. <br>
+            • Help patrons choose and locate library resources and prepare material for shelving and as needed, shelves, as 
+            necessary. 
+          </p>
+        </div>
+
+        <!-- Work experience item 3 (Achievements) -->
+        <div class="timeline-item" onclick="toggleDetails('work-details-3-achievements')">
+          <div class="timeline-content">
+            <h3>Athletic Achievements</h3>
+            <p class="timeline-date">2021 - Present</p>
+          </div>
+        </div>
+
+        <!-- Work details dropdown 3 (Achievements) -->
+        <div id="work-details-3-achievements" class="details-container">
+          <p>
+            As a student-athlete, I've earned recognition for my achievements in sports. Here are some highlights:
+          </p>
+          <ul>
+            <li>NCAA Division II Scholar</li>
+            <li>Contributed to the team's success in regional championships and playoffs during the 2022 and 2023 seasons</li>
+            <li>Awarded as conference Scholar-Athlete in 2022</li>
+            <li>Chi Alpha Sigma Member </li>
+          </ul>
+        </div>
+
+        <!-- Work experience item 4 (Extracurricular Activities) -->
+        <div class="timeline-item" onclick="toggleDetails('work-details-4-activities')">
+          <div class="timeline-content">
+            <h3>Extracurricular Activities</h3>
+            <p class="timeline-date"></p>
+          </div>
+        </div>
+
+        <!-- Work details dropdown 4 (Extracurricular Activities) -->
+        <div id="work-details-4-activities" class="details-container">
+          <p>
+            Beyond athletics, I'm actively involved in various extracurricular activities and organizations. Here are some of my contributions:
+          </p>
+          <ul>
+            <li>Member of the Dean's List consist for outstanding academic performance.</li>
+            <li>Engaged in organizations like Rewrite the Code and ColorStack, promoting diversity and inclusion in the tech community.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+
+ <!-- Projects Section -->
+
+<div id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <!-- Container for project cards -->
+  <div class="project-container">
+    <!-- Project cards -->
+    <div class="project">
+      <!-- Project: Weather App -->
+      <h3>Weather App</h3>
+      <p>A simple web application to check the weather using the OpenWeatherMap API. Built with HTML/CSS and JavaScript.</p>
+      <div class="project-links">
+        <a href="https://a-mwen.github.io/weather-app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <!-- Project: Calculator -->
+      <h3>Calculator</h3>
+      <p>Experience the simplicity of our calculator application designed for quick and accurate mathematical calculations. Whether you're tackling basic arithmetic or more complex equations, our calculator provides a user-friendly interface for your mathematical needs.</p>
+      <div class="project-links">
+        <a href="https://a-mwen.github.io/Javascript-calculator/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project sunfresh">
+      <!-- Project: Sunfresh Food Service (Hidden Content) -->
+      <h3>Sunfresh Food Service</h3>
+      <p>This project was a collaboration with a group of fellow students. We collaborated on the creation and development of a user-friendly web interface for Sunfresh Food Services'(A winery company). I conducted thorough testing of API queries using Postman to ensure seamless integration and functionality. Here are some of the many image documentations of what I did.</p>
+      <div class="project-links">
+        <a href="Sunfresh Project Details.pdf" class="toggle-hidden-content">Show Details</a>
+      </div>
+      <div class="hidden-content">
+        <!-- Images removed as per your request -->
+      </div>
+    </div>
+
+    <!-- Project: Database Project (Hidden Content) -->
+    <div class="project database">
+      <h3>Database Project</h3>
+      <p>A database management system meticulously crafted for the dynamic needs of modern restaurants. This system serves as the backbone for efficient and seamless food order management.</p>
+      <div class="project-links">
+        <a href="https://github.com/a-mwen/Restaurant-Schema/blob/main/restaurantDatabase.mwb" target="_blank" rel="noopener noreferrer" class="toggle-hidden-content">Show Details</a>
+      </div>
+      <div class="hidden-content">
+        <!-- Images removed as per your request -->
+      </div>
+    </div>
+
+    <!-- Add more projects as needed -->
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Contact Me</h2>
+    
+    <!-- Display your contact details -->
+    <div class="contact-details">
+      <p><strong>Email:</strong> ashamweene2004@gmail.com</p>
+      <p><strong>Phone:</strong> +1 (240) 474-2570</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ashamweene" target="_blank">linkedin.com/in/ashamweene</a></p>
+      <!-- Add any other contact details you'd like to provide -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Asha Mweene. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
